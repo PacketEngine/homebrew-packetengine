@@ -7,9 +7,6 @@ class Packetengine < Formula
   depends_on "go" => :build
 
   def install
-    #Dir.chdir('cmd/packetengine')
-    #system "go", "mod", "download"
-    #system "go", "build", "-o", bin/"packetengine"
     ENV["GOPATH"] = buildpath
     path = buildpath/"src/github.com/PacketEngine/packetengine/cmd/packetengine"
     path.install Dir["*"]
@@ -22,4 +19,3 @@ class Packetengine < Formula
     system "#{bin}/packetengine", "-h"
   end
 end
-
