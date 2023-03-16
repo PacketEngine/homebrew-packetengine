@@ -7,11 +7,12 @@ class Packetengine < Formula
   depends_on "go" => :build
 
   def install
-    ENV["GOPATH"] = buildpath
-    path = buildpath/"src/github.com/PacketEngine/packetengine/cmd/packetengine"
+    ENV["GOPATH"] = buildpath/"cmd/packetengine"
+    path = buildpath/"src/github.com/PacketEngine/packetengine"
     path.install Dir["*"]
+    puts path
     cd path do
-      system "go", "build", "-o", "#{bin}/packetengine"
+      system "go", "build", "-o", "#{bin}/packetengine", "./cmd/packetengine"
     end
   end
 
