@@ -1,4 +1,4 @@
-class PacketEngine < Formula
+class Packetengine < Formula
   desc "The official PacketEngine CLI application"
   homepage "https://github.com/PacketEngine/packetengine"
   url "https://github.com/PacketEngine/packetengine/archive/refs/tags/v0.1.0.tar.gz"
