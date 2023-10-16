@@ -1,8 +1,8 @@
 class Packetengine < Formula
   desc "The official PacketEngine CLI application"
   homepage "https://github.com/PacketEngine/packetengine"
-  url "https://github.com/PacketEngine/packetengine/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "3dd45c71ae3154ff669aae726fe6a8caa7ec15462b3d8a425458aaa06e804ad5"
+  url "https://github.com/PacketEngine/packetengine/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "f743361d4baa0df198cceae7fd3bdf8dfeb1802ec421c98930ee121d41a9bb4e"
 
   depends_on "go" => :build
 
